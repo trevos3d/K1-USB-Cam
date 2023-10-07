@@ -9,6 +9,7 @@ SSH access to your printer and run:
 ```sh
 (cd ~/ && git clone https://github.com/trevos3d/K1-USB-Cam.git && cd K1-USB-Cam && chmod +x *.sh && ./install.sh)
 ```
+Caso a webcam não apareça automaticamente no Fluidd, reinicie a impressora.
 
 ## Uninstall (It will clean all USB Camera files)
 (Para desinstalar - Isso vai remover todos os arquivos relativos a esta instalação)
