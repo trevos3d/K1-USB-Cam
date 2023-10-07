@@ -5,19 +5,19 @@
 
 SSH access to your printer and run:
 ```sh
-(cd ~/ && git clone https://github.com/trevos3d/K1-USB-Cam.git && cd K1-USB-Cam && ./install.sh)
+(cd ~/ && git clone https://github.com/trevos3d/K1-USB-Cam.git && cd K1-USB-Cam && chmod +x *.sh && ./install.sh)
 ```
 
 ## Uninstall (It will clean all USB Camera files)
 
 ```sh
-(cd ~/k1-usb-camera && git pull && ./uninstall.sh)
+(cd ~/K1-USB-Cam && git pull && ./uninstall.sh)
 ```
 
 ## Update (when available)
 
 ```sh
-(cd ~/k1-usb-camera && git pull && ./install.sh)
+(cd ~/K1-USB-cam && git pull && ./install.sh)
 ```
 
 ## To get camera access
