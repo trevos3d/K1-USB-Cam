@@ -1,0 +1,34 @@
+#!/bin/sh
+# System startup script for K1 USB camera
+
+### BEGIN INIT INFO
+# Provides:          usb_camera
+# Required-Start:    $local_fs S56moonraker
+# Required-Stop:
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: USB camera daemon
+# Description:       Starts USB camera daemon.
+### END INIT INFO
+
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+DESC="USB camera daemon"
+NAME="USB camera"
+PIDFILE=/var/run/usb_camera.pid
+
+case "$1" in
+start)  echo "Starting USB camera"
+        start-stop-daemon --start --quiet --exec /usr/data/startup_usb_camera.sh \
+                          --background --pidfile $PIDFILE --make-pidfile \
+                          --chuid root --user root
+        ;;
+stop)   echo "Not implemented"
+        ;;
+restart) log_daemon_msg "Restarting..." $NAME
+        $0 stop
+        $0 start
+        ;;
+*)      echo "Usage: /etc/init.d/usb_camera {start|stop|restart}"
+        exit 2
+        ;;
+esac
