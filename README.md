@@ -17,7 +17,7 @@ SSH access to your printer and run:
 ## Update (when available)
 
 ```sh
-(cd ~/K1-USB-cam && git pull && ./install.sh)
+(cd ~/K1-USB-Cam && git pull && ./install.sh)
 ```
 
 ## To get camera access
