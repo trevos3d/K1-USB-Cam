@@ -9,4 +9,5 @@ chmod +x /etc/init.d/S99usb_camera
 echo "Successfully Installed K1-USB-Cam"
 
 echo "Starting Webcam Service"
+chmod +x /etc/init.d/S99usb_camera
 /etc/init.d/S99usb_camera start
