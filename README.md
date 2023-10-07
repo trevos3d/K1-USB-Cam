@@ -23,7 +23,7 @@ SSH access to your printer and run:
 ## To get camera access
 
 Access the url for the cameras:
-- USB camera stream: [http://<your-printer-IP>:8080/?action=stream](http://<your-printer-IP>:8080/?action=stream)
-- USB camera snapshot: [http://<your-printer-IP>:8080/?action=snapshot](http://<your-printer-IP>:8080/?action=snapshot)
+- USB camera stream: [http://your-printer-IP:8080/?action=stream](http://your-printer-IP:8080/?action=stream)
+- USB camera snapshot: [http://your-printer-IP:8080/?action=snapshot](http://your-printer-IP:8080/?action=snapshot)
 
-Please remember to change <your-printer-IP> on url above.
+Please remember to change *your-printer-IP* on url above.
