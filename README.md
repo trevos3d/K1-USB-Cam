@@ -5,7 +5,7 @@
 
 SSH access to your printer and run:
 ```sh
-(cd ~/ && git clone https://gitlab.com/trevos3d/k1-usb-camera.git && cd k1-usb-camera && ./install.sh)
+(cd ~/ && git clone https://github.com/trevos3d/K1-USB-Cam.git && cd K1-USB-Cam-main && ./install.sh)
 ```
 
 ## Uninstall (It will clean all USB Camera files)
