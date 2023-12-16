@@ -61,3 +61,7 @@ When finish, you will can see something like this on your dashboard.
 (Quando terminado, você verá algo parecido com isso no seu dashboard.)
 
 ![screenshot](./img/screenshot.png)
+
+# Thanks to
+
+- [Kimmo Saari / Kirbo](https://github.com/Kirbo) - For the base to build this project  
