@@ -51,7 +51,7 @@ do
 
     echo "3) exit"
 
-    echo "\nHow can I help you today? "
+    echo "How can I help you today? "
 
     read msg;
 
@@ -66,7 +66,7 @@ do
            echo "We're done here."
            exit ;;
         *)
-           echo "\nOoops, invalid option.\n"
+           echo "Ooops, invalid option."
     esac
     sleep .5
 done
