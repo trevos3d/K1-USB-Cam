@@ -17,18 +17,24 @@ NAME="USB camera"
 PIDFILE=/var/run/usb_camera.pid
 
 case "$1" in
-start)  echo "Starting USB camera"
+start)
+        echo "Starting USB camera"
         start-stop-daemon --start --quiet --exec /usr/data/startup_usb_camera.sh \
                           --background --pidfile $PIDFILE --make-pidfile \
                           --chuid root --user root
         ;;
-stop)   echo "Not implemented"
+stop)
+        echo "Stopping USB camera"
+        start-stop-daemon --stop --quiet --pidfile $PIDFILE
+        rm -f $PIDFILE
         ;;
-restart) log_daemon_msg "Restarting..." $NAME
+restart)
+        echo "Restarting USB camera"
         $0 stop
         $0 start
         ;;
-*)      echo "Usage: /etc/init.d/usb_camera {start|stop|restart}"
+*)
+        echo "Usage: /etc/init.d/S99usb_camera {start|stop|restart}"
         exit 2
         ;;
 esac
