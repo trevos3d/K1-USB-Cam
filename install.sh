@@ -2,7 +2,8 @@
 
 Single_USB_Camera()
 {
-    echo "\n$msg \nInstalling Single USB camera...\n"
+    echo ""
+    echo "$msg Installing Single USB camera..."
     cp -f script/single_cam.sh /usr/data/startup_usb_camera.sh
     chmod +x /usr/data/startup_usb_camera.sh
 
@@ -15,12 +16,13 @@ Single_USB_Camera()
     chmod +x /etc/init.d/S99usb_camera
     /etc/init.d/S99usb_camera start
 
-    echo  "\n \e[1;31m Please consider reboot your printer to make sure that all process will work property.\e[0m \n" 
+    echo  "Please consider reboot your printer to make sure that all process will work property." 
 }
 
 Dual_USB_Camera()
 {
-    echo "\n$msg \nInstalling Dual USB camera...\n"
+    echo ""
+    echo "$msg Installing Dual USB camera..."
     cp -f script/dual_cam.sh /usr/data/startup_usb_camera.sh
     chmod +x /usr/data/startup_usb_camera.sh
 
@@ -33,7 +35,7 @@ Dual_USB_Camera()
     chmod +x /etc/init.d/S99usb_camera
     /etc/init.d/S99usb_camera start
 
-    echo "\n \e[1;31m Please consider reboot your printer to make sure that all process will work property.\e[0m \n" 
+    echo "Please consider reboot your printer to make sure that all process will work property." 
 }
 
 
@@ -57,16 +59,19 @@ do
 
     case $msg in
         1) echo "Install Single USB Camera"
+            echo "----------------------------"
             Single_USB_Camera
             exit ;;
         2) echo "Install K1 + USB Cam"
-           Dual_USB_Camera 
-           exit ;;
+            echo "----------------------------"
+            Dual_USB_Camera 
+            exit ;;
         3) echo "Quit"
-           echo "We're done here."
-           exit ;;
+            echo "----------------------------"
+            echo "We're done here."
+            exit ;;
         *)
-           echo "Ooops, invalid option."
+            echo "Ooops, invalid option."
     esac
     sleep .5
 done
