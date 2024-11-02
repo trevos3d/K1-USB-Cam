@@ -7,7 +7,7 @@
 SSH access to your printer and run:
 (Acesse sua impressora via SSH e execute este comando:)
 ```sh
-(cd ~ && git clone https://github.com/trevos3d/K1-USB-Cam.git && cd K1-USB-Cam && chmod +x *.sh && ./install.sh)
+(cd /usr/data/ && git clone https://github.com/trevos3d/K1-USB-Cam.git && cd K1-USB-Cam && chmod +x *.sh && ./install.sh)
 ```
 
 Chose Single or dual Camera installation.
@@ -19,14 +19,14 @@ Caso a webcam não apareça automaticamente no Fluidd, reinicie a impressora.
 (Para desinstalar - Isso vai remover todos os arquivos relativos a esta instalação)
 
 ```sh
-(cd ~/K1-USB-Cam && git pull && ./uninstall.sh)
+(cd /usr/data/K1-USB-Cam && git pull && ./uninstall.sh)
 ```
 
 ## Update (when available)
 (Para atualizar, caso haja uma atualização disponivel)
 
 ```sh
-(cd ~/K1-USB-Cam && git pull && ./install.sh)
+(cd /usr/data/K1-USB-Cam && git pull && ./install.sh)
 ```
 Chose Single or dual Camera installation.
 (Escolha entre instalar apenas a camera USB ou as duas cameras (K1 + USB Camera)
