@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 sleep 30
 
 kill -9 $(pidof mjpg_streamer)
