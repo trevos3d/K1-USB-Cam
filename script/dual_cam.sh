@@ -1,4 +1,5 @@
 #!/bin/sh
+sleep 120
 
 kill -9 $(pidof mjpg_streamer)
 kill -9 $(fuser /dev/video4)
